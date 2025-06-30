@@ -1,0 +1,17 @@
+<section>
+  <h1>'property binding' et 'event binding'</h1>
+  <img alt="logo angular" src="favicon.ico">
+
+  <!-- faisable sur les dernière versions d'angular -->
+  <img alt="logo angular" src={{imgSrc}}>
+
+  <!-- Avec du 'property binding' -->
+  <img alt="logo angular" [src]="imgSrc">
+
+  <button (click)="handleClick()" [disabled]="buttonDesabled">Cliquez ici</button>
+
+  <!-- Encore très récent, bien testé si utilisation de cette syntaxe-->
+  <button disabled={{buttonDesabled}}>Cliquez ici</button>
+
+
+</section>

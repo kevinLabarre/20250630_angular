@@ -4,12 +4,14 @@ import { User } from './interfaces/user.interface';
 import { ApiResponse } from './interfaces/apiResponse.interface';
 import { User as UserModel } from './models/user.model';
 import { DirectiveIfComponent } from "./components/directive-if/directive-if.component";
+import { DirectiveForComponent } from "./components/directive-for/directive-for.component";
+import { ProtertyBindingAndEventBindingComponent } from "./components/proterty-binding-and-event-binding/proterty-binding-and-event-binding.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  imports: [DirectiveIfComponent],
+  imports: [DirectiveIfComponent, DirectiveForComponent, ProtertyBindingAndEventBindingComponent],
   // template: "<h1>Bienvenue sur angular</h1>",
   // styleUrl: './app.component.css'
 })
