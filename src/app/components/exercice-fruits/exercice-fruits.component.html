@@ -7,4 +7,13 @@
           -> Le second affiche les légumes
       - Ajouter une case à cocher pour masquer/afficher les produits qui ne sont plus en stock
     </pre>
+  <input type="checkbox" [(ngModel)]="displayHorsSotck" (ngModelChange)="handleCheckBox()" /> Afficher hors stock
+  <app-table-product [products]="fruits" />
+  <app-table-product [products]="legumes" />
+
+  <h1>Exemple 2 : avec getter</h1>
+  <input type="checkbox" [(ngModel)]="displayHorsSotck2" />
+  <app-table-product [products]="fruitsGetter" />
+  <app-table-product [products]="legumesGetter" />
+
 </section>
