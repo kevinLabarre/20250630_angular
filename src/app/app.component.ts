@@ -8,12 +8,14 @@ import { DirectiveForComponent } from "./components/directive-for/directive-for.
 import { ProtertyBindingAndEventBindingComponent } from "./components/proterty-binding-and-event-binding/proterty-binding-and-event-binding.component";
 import { CompteurComponent } from "./components/compteur/compteur.component";
 import { InputComponent } from "./components/input/input.component";
+import { ExerciceFruitsComponent } from "./components/exercice-fruits/exercice-fruits.component";
+import { PassageDonneesParentVersEnfantComponent } from "./components/passage-donnees-parent-vers-enfant/passage-donnees-parent-vers-enfant.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  imports: [DirectiveIfComponent, DirectiveForComponent, ProtertyBindingAndEventBindingComponent, CompteurComponent, InputComponent],
+  imports: [DirectiveIfComponent, DirectiveForComponent, ProtertyBindingAndEventBindingComponent, CompteurComponent, InputComponent, ExerciceFruitsComponent, PassageDonneesParentVersEnfantComponent],
   // template: "<h1>Bienvenue sur angular</h1>",
   // styleUrl: './app.component.css'
 })
