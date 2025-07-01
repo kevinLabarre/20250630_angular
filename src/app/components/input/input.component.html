@@ -1,0 +1,15 @@
+<section>
+  <h1>Les input avec "ngModel"</h1>
+  <input type="text" [(ngModel)]="inputValue" (ngModelChange)="handleChange()" />
+
+  <p>Valeur de l'input : {{inputValue}}</p>
+  <button (click)="reset()">reset</button>
+
+  <input type="checkbox" [(ngModel)]="checkboxValue" />
+
+  @if(checkboxValue){
+  <p>case cochée !</p>
+  } @else {
+  <p>case non cochée !</p>}
+
+</section>

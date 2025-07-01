@@ -6,12 +6,14 @@ import { User as UserModel } from './models/user.model';
 import { DirectiveIfComponent } from "./components/directive-if/directive-if.component";
 import { DirectiveForComponent } from "./components/directive-for/directive-for.component";
 import { ProtertyBindingAndEventBindingComponent } from "./components/proterty-binding-and-event-binding/proterty-binding-and-event-binding.component";
+import { CompteurComponent } from "./components/compteur/compteur.component";
+import { InputComponent } from "./components/input/input.component";
 
 @Component({
   selector: 'app-root',
   // imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  imports: [DirectiveIfComponent, DirectiveForComponent, ProtertyBindingAndEventBindingComponent],
+  imports: [DirectiveIfComponent, DirectiveForComponent, ProtertyBindingAndEventBindingComponent, CompteurComponent, InputComponent],
   // template: "<h1>Bienvenue sur angular</h1>",
   // styleUrl: './app.component.css'
 })

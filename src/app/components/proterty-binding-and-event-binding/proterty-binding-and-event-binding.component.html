@@ -10,7 +10,9 @@
 
   <button (click)="handleClick()" [disabled]="buttonDesabled">Cliquez ici</button>
 
-  <!-- Encore très récent, bien testé si utilisation de cette syntaxe-->
+  <!-- Encore très récent, bien tester si utilisation de cette syntaxe
+    Attention, exemple ci-dessous ne fonctionne pas, le bouton reste désactivé
+  -->
   <button disabled={{buttonDesabled}}>Cliquez ici</button>
 
 
